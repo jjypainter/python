@@ -6,6 +6,6 @@ import requests
 html=requests.get('https://finance.naver.com/marketindex')
 soup=bs4.BeautifulSoup(html.text,'html.parser')
 
-dollor=soup.select_one('#exchangeList > li.on > a.head.usd > div > span.value')
+dollor=soup.select_one('exchangeList > li.on > a.head.usd > div > span.value')
 
 print(dollor.text)
