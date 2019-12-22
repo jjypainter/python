@@ -1,7 +1,6 @@
 import bs4
 import requests
 
-
 ##trade-info > div.coin-price.border-right-gray > p.coin-price-current > span
 
 html=requests.get('https://coinmarketcap.com/ko/currencies/hdac/')
